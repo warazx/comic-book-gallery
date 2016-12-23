@@ -60,16 +60,16 @@ namespace ComicBookGallery.Data
         {
             ComicBook comicBookToReturn = null;
 
-            /*foreach (var comicBook in _comicBooks)
+            foreach (var comicBook in _comicBooks)
             {
                 if (comicBook.Id == id) comicBookToReturn = comicBook;
             }
 
-            comicBookToReturn = (ComicBook) from book in _comicBooks
+            /*comicBookToReturn = (ComicBook) from book in _comicBooks
                                             where book.Id == id
-                                            select book;*/
+                                            select book;
 
-            comicBookToReturn = (ComicBook) _comicBooks.Where(b => b.Id == id).Select(b => b);
+            comicBookToReturn = (ComicBook) _comicBooks.Where(b => b.Id == id).Select(b => b);*/
 
             return comicBookToReturn;
         }

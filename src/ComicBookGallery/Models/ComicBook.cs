@@ -30,5 +30,13 @@ namespace ComicBookGallery.Models
                     .ToLower() + "-" + IssueNumber + ".jpg";
             }
         }
+
+        private static int IdCounter = 1;
+
+        public ComicBook()
+        {
+            Id = IdCounter;
+            IdCounter++;
+        }
     }
 }
